@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vivek's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: rgb(18, 8, 47);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .right{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;       
+            background-color: #8157ff;
+
+        }
+        .right a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 0.2rem 0.5rem;
+        }
+
+        #firstsection {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 4rem 2rem;
+           
+            text-align: center;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .circle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .loder1,
+        .loder2,
+        .loder3,
+        .loder4 {
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            border: 0.9rem solid #120047;
+            rotate: -45deg;
+        }
+
+        .loder1 {
+            border-top-color: blueviolet;
+            border-left-color: blueviolet;
+        }
+
+        .loder2 {
+            border-top-color: blueviolet;
+        }
+
+        .loder3 {
+            border-bottom-color: blueviolet;
+            border-left-color: blueviolet;
+        }
+
+        .loder4 {
+            border-top-color: blueviolet;
+            border-left-color: blueviolet;
+            border-bottom-color: blueviolet;
+        }
+
+        .information {
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .square,
+        .square2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .a,
+        .b {
+            width: 90%;
+            max-width: 300px;
+            border-radius: 0.5rem;
+        }
+
+        .a img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        .b {
+            background-color: #0d1b2a;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .b button {
+            background-color: blueviolet;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            color: white;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        #thirdsection,
+        #foursection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .one,
+        .two,
+        .three,
+        .four {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .one img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        .notes {
+            background-color: aliceblue;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+        }
+
+        #foot {
+            background-color: #120047;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        @media (min-width: 768px) {
+            #firstsection {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .leftsection {
+                flex: 1;
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                flex: 1;
+            }
+
+            #thirdsection,
+            #foursection {
+                flex-direction: row;
+            }
+
+            .one,
+            .three {
+                flex: 1;
+            }
+
+            .two,
+            .four {
+                flex: 1;
+            }
+
+            .notes {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">
+               
+                    <a href="#firstsection">Home </a>
+                    <a href="#thirdsection">About </a>
+                    <a href="#foursection">Notes </a>
+                    <a href="#proj">Projects </a>
+                    <a href="#foot">Contanc us </a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firstsection">
+            <div class="leftsection">
+                Hi, My name is <p style="color: blueviolet; display: inline-block; font-weight: bold;"> Vivek</p>  and <br>
+                I am a
+                passionate <br> <span id="element"></span>
+            </div>
+            <div class="hero"> <img src="hero.png" alt=""></div>
+
+        </section>
+        <hr style=" border: none; background-color: blueviolet; height: 1.2px; margin:  100px 84px   ;">
+        <div class="secondsection">
+            <div class="circle">
+                <div class="loder1"></div>
+                <div class="information"> WEBSITE HEIGHT <br>3716PX</div>
+                <div class="loder2"></div>
+                <div class="information"> DAILY WORK <br> 5 HOURS</div>
+                <div class="loder3"></div>
+                <div class="information"> DAILY STUDY <br> 3 HOURS</div>
+                <div class="loder4"></div>
+                <div class="information"> OUR TEAM DALY <br>WORK 12 HOURS</div>
+            </div>
+
+            <h1 style="text-align: center; font-size: 50px; color: white" id="proj"> MY PROJECTS </h1>
+            <div class="square">
+                <div class="a"><img src="amozone.png" alt="AMAZONEclone" style="width: 100%; height: 100%; object-fit: cover;  border-top-left-radius: 5px;
+            border-top-right-radius: 5px; "></div>
+                <div class="a"><img src="netflixclone.png" alt="netflixclone" style="width: 100%; height: 100%; object-fit: cover;   border-top-left-radius: 5px;
+            border-top-right-radius: 5px;"></div>
+                <div class="a"><img src="loginpage.png" alt="login page" style="width: 100%; height: 100%; object-fit: cover;   border-top-left-radius: 5px;
+            border-top-right-radius: 5px;"></div>
+            </div>
+            <div class="square2">
+                <div class="b">
+                    <p>project 1</p>
+                    <h2>AMAZONE CLONE </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic alias architecto obcaecati culpa eum
+                        et inventore ex, quaerat</p>
+                    <button>see more</button>
+                </div>
+                <div class="b">
+                    <p>project 2</p>
+                    <h2>NETFLIX CLONE </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic alias architecto obcaecati culpa eum
+                        et inventore ex, quaerat</p>
+                    <button>
+                        see more
+                    </button>
+                </div>
+                <div class="b"> project 3 <h2>LOGIN PAGE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic alias architecto obcaecati culpa eum
+                        et inventore ex, quaerat</p>
+                    <button>
+                        see more
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div id="thirdsection">
+            <div class="one"><img src="journey and vision.jpg" alt="journey and vision"
+                    style="height: 100%; width: 100%; object-fit: cover; border-radius: 10px;"></div>
+            <div class="two">
+                <h3 style="margin-top: 20PX;">ABOUT US</h3>
+                <h1 style="font-size: 40px;">OUR JOURNEY <br> AND VISION</h1>
+                <p style="font-size: 18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque animi
+                    necessitatibus veniam eius inventore accusamus iste, laudantium autem possimus adipisci quasi ut
+                    corrupti earum repudiandae ipsa, libero, natus harum. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Consequuntur ut modi vitae esse consequatur inventore aut aperiam! Placeat
+                    distinctio aperiam quisquam! Voluptatibus esse officia repudiandae praesentium accusantium laborum
+                    sit temporibus.</p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+
+        <div id="foursection">
+            <div class="three">
+                <h1>Student Notes</h1><br>
+                Welcome to the Notes section! Here, you will find detailed study materials and resources to help you
+                understand the subjects better. These notes are carefully curated to cover important concepts, tips, and
+                practice problems to ensure you succeed. Feel free to download and refer to these notes anytime!
+            </div>
+
+
+            <div class="four">
+                <h1>NOTES LIBRARY</h1>
+                <div class="html notes"> DOWNLOAD FREE HTML NOTES <br><i class='bx bxs-download'></i> <a
+                        href="https://drive.google.com/file/d/12VUHlvaR_3T0YHOL7i2gOMJ0kBPNwSeh/view?usp=sharing">download
+                        now</a></div>
+                <div class="css notes"> DOWNLOAD FREE CSS NOTES <br><i class='bx bxs-download'></i> <a
+                        href="https://drive.google.com/file/d/120wz1t1vdpHsmhc6cSTImSOXLHxFU5JQ/view?usp=sharing">download
+                        now</a></div>
+                <div class="excel notes"> DOWNLOAD FREE EXCEL NOTES <br><i class='bx bxs-download'></i> <a
+                        href="https://drive.google.com/file/d/127GoSEWQk0tQZ1WWHgHW5ACZY5C3SPDy/view?usp=sharing">download
+                        now</a></div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div id="foot">
+            <h1><a href="#firstsection">PORTFOLIO</a></h1>
+            <p> <i class='bx bx-home'></i>laxman vihar phase-2 <br> Gurugram ,Haryana <br>122001 </p>
+
+            <div class="contact" style="text-align: center;">
+                <h1>Contact Me </h1>
+                <a
+                    href="https://www.linkedin.com/in/vivek-kumar-0a4339323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <i class='bx bxl-linkedin-square'></i>LinkedIn </a>
+                <a href="https://x.com/VivekKumar28548?t=B1DzNTzz69WvAgZnzNjaOw&s=08"> <i class='bx bxl-twitter'></i>
+                    Twitter/X </a>
+                <a href="https://wa.me/8923682470>"> <i class='bx bxl-whatsapp-square'></i> whatsaap</a>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <hr style=" border: none; background-color: blueviolet; height: 1.2px; margin:  100px 84px   ;">
+
+            <h3> <i class='bx bx-copyright'></i> Copyright Vivek 2025</h3>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'computer teacher', 'an accountant', 'data analyst'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
