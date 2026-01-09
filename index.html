@@ -38,8 +38,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
         }
@@ -49,8 +49,8 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: #00ffff;
-            box-shadow: 0 0 20px #00ffff;
+            background-color: #ff6b35;
+            box-shadow: 0 0 20px #ff6b35;
             pointer-events: none;
             z-index: 9999;
             transition: transform 0.1s ease;
@@ -64,9 +64,9 @@
             transform: translate(-50%, -50%);
             width: 40px;
             height: 40px;
-            border: 2px solid #ff00ff;
+            border: 2px solid #8b5cf6;
             border-radius: 50%;
-            box-shadow: 0 0 30px #ff00ff;
+            box-shadow: 0 0 30px #8b5cf6;
             opacity: 0.5;
             transition: all 0.3s ease;
         }
@@ -77,7 +77,7 @@
             align-items: center;       
             background-color: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid #00ffff;
+            border-bottom: 1px solid #ff6b35;
             padding: 1rem;
             transform: translateY(-100%);
             animation: slideDown 1s ease-out forwards;
@@ -94,9 +94,9 @@
         }
 
         nav ul li a:hover {
-            color: #00ffff;
-            text-shadow: 0 0 10px #00ffff;
-            border: 2px solid #00ffff;
+            color: #ff6b35;
+            text-shadow: 0 0 10px #ff6b35;
+            border: 2px solid #ff6b35;
             border-radius: 5px;
             padding: 0.2rem 0.5rem;
         }
@@ -136,26 +136,36 @@
             border-radius: 50%;
             border: 0.9rem solid #120047;
             rotate: -45deg;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .loder1 {
-            border-top-color: blueviolet;
-            border-left-color: blueviolet;
+            border-top-color: #f59e0b;
+            border-left-color: #f59e0b;
         }
 
         .loder2 {
-            border-top-color: blueviolet;
+            border-top-color: #f59e0b;
         }
 
         .loder3 {
-            border-bottom-color: blueviolet;
-            border-left-color: blueviolet;
+            border-bottom-color: #f59e0b;
+            border-left-color: #f59e0b;
         }
 
         .loder4 {
-            border-top-color: blueviolet;
-            border-left-color: lueviolet;
-            border-bottom-color: blueviolet;
+            border-top-color: #f59e0b;
+            border-left-color: #f59e0b;
+            border-bottom-color: #f59e0b;
         }
 
         .information {
@@ -202,12 +212,12 @@
             font-size: 1rem;
             color: #e0e0e0;
             border-radius: 0.5rem;
-            border: 1px solid #ff00ff;
-            box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+            border: 1px solid #8b5cf6;
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
         }
 
         .b button {
-            background: linear-gradient(135deg, #00ffff 0%, #ff00ff 100%);
+            background: linear-gradient(135deg, #ff6b35 0%, #8b5cf6 100%);
             border: none;
             padding: 0.5rem 1rem;
             border-radius: 0.3rem;
@@ -216,12 +226,12 @@
             font-size: 1rem;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
         }
 
         .b button:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(255, 107, 53, 0.8);
         }
 
         #thirdsection,
@@ -254,8 +264,8 @@
             padding: 1rem;
             border-radius: 1rem;
             margin-top: 1rem;
-            border: 1px solid #00ffff;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            border: 1px solid #ff6b35;
+            box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
         }
 
         #foot {
@@ -265,7 +275,7 @@
             flex-direction: column;
             align-items: center;
             backdrop-filter: blur(10px);
-            border-top: 1px solid #ff00ff;
+            border-top: 1px solid #8b5cf6;
         
         }
 
@@ -342,7 +352,19 @@
         }
 
         .hero img:hover {
-            transform: scale(1.1) rotateY(5deg);
+            animation: bounce 0.6s ease;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
         }
     </style>
 </head>
@@ -366,14 +388,14 @@
     <main>
         <section id="firstsection">
             <div class="leftsection">
-                Hi, My name is <p style="color: blueviolet; display: inline-block; font-weight: bold;"> Vivek</p>  and <br>
+                Hi, My name is <p style="color: #f59e0b; display: inline-block; font-weight: bold;"> Vivek</p>  and <br>
                 I am a
                 passionate <br> <span id="element"></span>
             </div>
             <div class="hero"> <img src="hero.png" alt=""></div>
 
         </section>
-        <hr style=" border: none; background: linear-gradient(90deg, #00ffff 0%, #ff00ff 100%); height: 2px; margin: 100px 84px; box-shadow: 0 0 10px #00ffff;">
+        <hr style=" border: none; background: linear-gradient(90deg, #ff6b35 0%, #8b5cf6 100%); height: 2px; margin: 100px 84px; box-shadow: 0 0 10px #ff6b35;">
         <div class="secondsection">
             <div class="circle">
                 <div class="loder1"></div>
@@ -434,7 +456,7 @@
                     adipisicing elit. Consequuntur ut modi vitae esse consequatur inventore aut aperiam! Placeat
                     distinctio aperiam quisquam! Voluptatibus esse officia repudiandae praesentium accusantium laborum
                     sit temporibus.</p>
-                <button style="background: linear-gradient(135deg, #00ffff 0%, #ff00ff 100%); border: none; padding: 0.5rem 1rem; border-radius: 0.3rem; color: #000; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);">LEARN MORE</button>
+                <button style="background: linear-gradient(135deg, #ff6b35 0%, #8b5cf6 100%); border: none; padding: 0.5rem 1rem; border-radius: 0.3rem; color: #000; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(255, 107, 53, 0.5);">LEARN MORE</button>
             </div>
         </div>
 
@@ -481,7 +503,7 @@
 
         </div>
         <div class="copyright">
-            <hr style=" border: none; background: linear-gradient(90deg, #00ffff 0%, #ff00ff 100%); height: 2px; margin: 100px 84px; box-shadow: 0 0 10px #00ffff;">
+            <hr style=" border: none; background: linear-gradient(90deg, #ff6b35 0%, #8b5cf6 100%); height: 2px; margin: 100px 84px; box-shadow: 0 0 10px #ff6b35;">
 
             <h3> <i class='bx bx-copyright'></i> Copyright Vivek 2025</h3>
         </div>
@@ -544,10 +566,10 @@
                 toggleActions: "play none none reverse"
             },
             opacity: 0,
-            scale: 0.8,
+            rotation: -10,
             duration: 1,
             stagger: 0.3,
-            ease: "back.out(1.7)"
+            ease: "power2.out"
         });
 
         // Footer animation
