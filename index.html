@@ -1,63 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vivek | Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Kumar | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-<canvas id="liquid-cursor"></canvas>
+    <nav class="navbar">
+        <div class="logo">VIVEK<span>KUMAR</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
 
-<header>
-  <nav>
-    <h1>Vivek.</h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="zoom-out">
+            <h2 class="greeting">Hello, I am</h2>
+            <h1>Vivek <span class="highlight">Kumar</span></h1>
+            <p class="typewriter">Computer Science Student & Technical Instructor</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View My Projects</a>
+                <a href="mailto:vk3052704@gmail.com" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
-<section id="home" class="hero">
-  <h2>Hi, I'm <span>Vivek</span></h2>
-  <p>Web Developer • Data Analyst • Educator</p>
-</section>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Education & Background</h2>
+            <div class="about-grid">
+                <div class="card" data-aos="fade-up">
+                    <i class="fas fa-graduation-cap icon-big"></i>
+                    <h3>Bachelor of Computer Science</h3>
+                    <p><strong>Dornacharya Govt College</strong> [cite: 4]</p>
+                    <p>Expected Graduation: June 2025 [cite: 4]</p>
+                    <p class="cgpa">Current CGPA: 10.0 [cite: 5]</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-certificate icon-big"></i>
+                    <h3>Certifications</h3>
+                    <p>Data Science Professional Course [cite: 39]</p>
+                    <p><em>IIT Mandi × Masai</em> [cite: 39]</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I build clean, fast, and practical web experiences.
-    No fluff. No fake animations. Just solid engineering.
-  </p>
-</section>
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Computer Instructor</h3>
+                        <span class="date">Present | Computer Institute</span>
+                        <p>Managing the education of 50+ students daily, bridging the gap between theory and practical application[cite: 7, 8].</p>
+                        <ul class="exp-list">
+                            <li>Delivering hands-on training in <strong>Advanced Excel</strong>, <strong>Tally Prime</strong>, and MS Office[cite: 9, 35].</li>
+                            <li>Mentoring students in <strong>Web Development</strong> fundamentals (HTML/CSS)[cite: 10].</li>
+                            <li>Introducing students to <strong>Python Programming</strong> through practical logic building[cite: 11].</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Portfolio Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-aos="flip-up">
+                    <div class="project-header">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Notes Library</h3>
+                    </div>
+                    <p>A student resource portal providing centralized access to study materials, Excel sheets, and syllabus[cite: 22, 24].</p>
+                    <ul>
+                        <li>Faculty-only login for content management[cite: 25].</li>
+                        <li>Direct student-faculty email communication feature[cite: 26].</li>
+                    </ul>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+                </div>
 
-  <div class="cards">
-    <div class="card">Amazon Clone</div>
-    <div class="card">Netflix Clone</div>
-    <div class="card">Login System</div>
-  </div>
-</section>
+                <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <i class="fas fa-user-code"></i>
+                        <h3>Nextovate Portfolio</h3>
+                    </div>
+                    <p>Professional personal portfolio website designed for high responsiveness across all devices[cite: 15, 18].</p>
+                    <ul>
+                        <li>Showcase of live project links and technical stack[cite: 17, 19].</li>
+                        <li>Optimized for fast loading and clean UI[cite: 15, 21].</li>
+                    </ul>
+                    <div class="tags">
+                        <span>JavaScript</span><span>Responsive UI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer id="contact">
-  <h2>Contact</h2>
-  <div class="socials">
-    <a href="#"><i class='bx bxl-linkedin'></i></a>
-    <a href="#"><i class='bx bxl-twitter'></i></a>
-    <a href="#"><i class='bx bxl-github'></i></a>
-  </div>
-</footer>
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Technical Expertise</h2>
+            <div class="skills-wrapper">
+                <div class="skill-category" data-aos="zoom-in">
+                    <h4>Languages & Core</h4>
+                    <p>Python [cite: 30], HTML5 [cite: 32], CSS3 [cite: 32], JavaScript [cite: 21]</p>
+                </div>
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                    <h4>Data Science</h4>
+                    <p>Pandas [cite: 34], NumPy [cite: 34], Matplotlib [cite: 34], Seaborn [cite: 34]</p>
+                </div>
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                    <h4>Tools</h4>
+                    <p>Git [cite: 37], GitHub [cite: 37], VS Code [cite: 37], Jupyter Notebook [cite: 37]</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="index.js"></script>
+    <footer class="footer">
+        <p>Vivek Kumar | 8923682470 | <a href="https://github.com/NEXTOVATE">GitHub</a> | <a href="https://www.linkedin.com/in/vivek-kumar-0a4339323">LinkedIn</a> </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>
